@@ -1,13 +1,11 @@
 package Calculadora;
 
-//Importandto coisas necessárias
 
 import java.util.Scanner;
 public class project {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        //Interface da calculadora. Front
 
         while (true) {
             System.out.println("---------- Bem vindo(a) a calculadora ----------");
@@ -19,9 +17,6 @@ public class project {
             float num2 = sc.nextFloat();
 
             String operador;
-
-            //Aqui foi criado esse laço para poder identicar se o usuário digitou o operador correto
-            //Observa-se que foi criado a variavel antes do laço, pois assim nós conseguimos usar ela em mais de 1 função
 
             while (true) {
                 System.out.println("Escolha um operador: +, -, *, /");
@@ -36,7 +31,6 @@ public class project {
                 System.out.println("Operador escolhido inválido, digite novamente");
             }
 
-            //Funcionamento da calculadora Back
 
             if (operador.equals("+")) {
                 System.out.println("O resultado da operação é: " + (num1 + num2));
